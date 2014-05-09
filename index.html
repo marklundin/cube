@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+		<meta name="description" content="Rubik’s Cube">
+		<meta name="keywords" content="Erno Rubik’s Cube">
+
+		<link rel="stylesheet" type="text/css" href="styles/cube.css">
+		<!-- <link rel="stylesheet" type="text/css" href="examples/basic/styles/base.css"> -->
+		<link rel="icon" type="image/png" href="media/cuber-favicon-0064x0064.png">
+		<link rel="apple-touch-icon" href="media/cuber-favicon-0144x0144.png">
+
+
+		<style>
+
+		 html, body, #container{
+		 	margin: 0px;
+		 	padding: 0px;
+		 	width: 100%;
+		 	height: 100%;
+		 }
+
+		 #container{
+		 	background: black;
+		 }
+
+		</style>
+
+
+
+		<title>Cube</title>
+
+	</head>
+	<body>
+		<div id='container'></div>
+
+		<script src='js/cube/cuber.min.js'></script>
+		<script src='js/photon.js'></script>
+		<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+		
+		<script>
+
+			var container 	= document.querySelector( '#container' ),
+				cube 		= new ERNO.Cube();
+				light 		= new Photon.Light( 10, 0, 100 );
+
+			container.appendChild( cube.domElement );
+
+
+		</script>
+	</body>
+</html>

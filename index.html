@@ -25,6 +25,19 @@
 		 	background: black;
 		 }
 
+		 .graydient {
+
+				/* http://www.colorzilla.com/gradient-editor/ */
+				background: #000; /* Old browsers */
+				background: -moz-radial-gradient(center, ellipse cover,  #444 0%, #000000 90%); /* FF3.6+ */
+				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#444), color-stop(90%,#000000)); /* Chrome,Safari4+ */
+				background: -webkit-radial-gradient(center, ellipse cover,  #444 0%,#000000 90%); /* Chrome10+,Safari5.1+ */
+				background: -o-radial-gradient(center, ellipse cover,  #444 0%,#000000 90%); /* Opera 12+ */
+				background: -ms-radial-gradient(center, ellipse cover,  #444 0%,#000000 90%); /* IE10+ */
+				background: radial-gradient(ellipse at center,  #444 0%,#000000 90%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			}
+
 		</style>
 
 
@@ -32,7 +45,7 @@
 		<title>Cube</title>
 
 	</head>
-	<body>
+	<body class='graydient'>
 		<div id='container'></div>
 
 		<script src='js/cube/cuber.min.js'></script>

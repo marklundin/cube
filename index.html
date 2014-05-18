@@ -40,8 +40,10 @@
 		
 		<script>
 
+			document.domain = 'mark-lundin.com';
+
 			var container 	= document.querySelector( '#container' ),
-				cube 		= new ERNO.Cube();
+				cube 		= new ERNO.Cube({hideInvisibleFaces:true});
 
 			container.appendChild( cube.domElement );
 

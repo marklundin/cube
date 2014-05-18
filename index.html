@@ -45,6 +45,7 @@
 		<div id='container'></div>
 
 		<script src='js/cube/cuber.min.js'></script>
+		<script src='js/deviceMotion.js'></script>
 		<script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
 		
 		<script>
@@ -52,13 +53,15 @@
 			document.domain = 'mark-lundin.com';
 
 			var container 	= document.querySelector( '#container' ),
-				cube 		= new ERNO.Cube({hideInvisibleFaces:true});
+				cube 		= new ERNO.Cube({
+					// hideInvisibleFaces:true
+				});
 
 			cube.position.z += 150;
 
 			container.appendChild( cube.domElement );
 
-			
+
 
 			// INTRO ANIMATION
 

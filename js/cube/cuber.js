@@ -11523,7 +11523,9 @@ ERNO.Cube = function( parameters ){
 
 				var key = String.fromCharCode( event.which );
 				if( 'XxRrMmLlYyUuEeDdZzFfSsBb'.indexOf( key ) >= 0 ) this.twist( key );
-
+				if( key == 'q') this.undo();
+				if( key == 'Q') this.redo();
+				
 		}
 	}.bind( this ));
 
